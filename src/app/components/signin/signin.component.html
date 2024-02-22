@@ -1,0 +1,46 @@
+<div class="login body-wrapper">
+    <div class="login-box">
+      <div class="title">
+        <span class="title-wrapper">
+                <img class="image"  src="assets/images/data_for_all.png">
+          <h1>DFA HELP</h1>
+        </span>
+      </div>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" accept-charset="utf-8" class="form-horizontal">
+        <!-- <div *ngIf="!loginForm.valid" style="color:red;font-size: 11px;padding-bottom: 10px;">Please enter username/password!</div> -->
+        <div class="errorclass"  *ngIf="loginerror">
+          <div class="errorspan">
+              <span>Invalid UserName Or Password</span>
+              <a (click)="rmverror()" class="close">×</a>
+          </div>
+      </div>
+        <div class="input text">
+          <input type="text" style="margin-bottom: 15px;"  placeholder="Username" formControlName="username" required>
+        </div>
+        
+        <div class="input password">
+          <input type="password" style="margin-bottom: 15px;" placeholder="Password" formControlName="password" required>
+        </div>
+        
+        <div class="input-select-wrapper">
+          <!-- <div class="input select" style="margin-bottom: 15px;">
+            <select>
+              <option label="English" value="string:en" selected="selected">English</option>
+              <option label="Français" value="string:fr">Français</option>
+              <option label="عربي" value="string:ar">عربي</option>
+              <option label="Portuguese" value="string:pt">Portuguese</option>
+            </select>
+          </div> -->
+        </div>
+
+        <div>
+          <button type="submit" style="margin-bottom: 14px;" 
+              class="btn btn-primary btn-login" [disabled]="!loginForm.valid">Login</button>
+          <div class="forgot-password">
+            <div class="center" ui-sref="dataAdmin.forgotPassword" href="#/forgotPassword">Forgot password?
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </div>

@@ -1,0 +1,12 @@
+<div class="selector-container"style="margin-top:47px">
+    <div class="page" style="float:left">
+     
+        <select class="select-list" [(ngModel)]="idOfAdaptations"  (change)="onChangeAdaptation()">
+            <option *ngFor="let adap of adaptations" [value]="adap.id">{{adap.name}}</option>
+        </select>
+    </div> 
+    <div class="Dashboard"> 
+        <p style="display:inherit;">{{NodeName}}</p>
+    </div>
+
+</div> 

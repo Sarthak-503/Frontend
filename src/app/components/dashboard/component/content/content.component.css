@@ -1,0 +1,267 @@
+.navigation-tab{
+    width: 192px;
+    height: 32px;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding: 0px;
+    border-color: rgb(218,218,218); 
+    opacity: 1;
+    mix-blend-mode: normal;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    width: 192px;
+    height: 26px;
+    margin: 0;
+    text-align: center;
+    /* transform: rotate(0deg) translate(267px, 87px); */
+}
+.navigation-tab>li{
+    background-color:rgb(218,218,218);
+    box-shadow: rgb(209, 209, 209) 0px 0px 0px 1px inset;
+    width: 38.41px;
+    height: 26px;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 8px;    
+}
+.select{
+
+    background-color: yellow;
+}
+li:hover{
+    background-color: white !important;
+    cursor:pointer;
+}
+.selected{
+    background-color: white !important;
+}
+
+
+
+/* content  */
+
+.content{
+    margin-top: 0%;
+    margin-left: 1.5%; 
+    /* padding: 2%; */
+}
+.allBlocks{
+}
+.commonclass{
+    display: flex;
+    height: min-content;
+    margin:2px; 
+    font-size: 12px;
+}
+
+.commonclass.inputBox {
+    height: 32px !important;
+}
+/* .commonclass.textARea {
+    height: 165px !important;
+} */
+
+.dashboard-formatting tr th,
+.dashboard-formatting tr td {
+    width: 150px;
+    padding: 5px 10px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.dashboard-formatting tr td {
+    width: auto;
+    padding: 5px 10px 23px 10px;
+}
+
+.dashboard-formatting tr td .angular-editor .angular-editor-toolbar {
+    background: none;
+    position: absolute;
+    right: 0;
+    top: -28px;
+    border: none;
+}
+
+.dashboard-formatting tr td .angular-editor-toolbar .angular-editor-toolbar-set {
+    margin-right: 0 !important;
+    vertical-align: top !important;
+}
+
+.dashboard-formatting tr td .angular-editor .angular-editor-wrapper .angular-editor-textarea {
+    border-color: #888888 !important;
+    border-radius: 4px;
+    resize: none;
+}
+.dashboard-formatting tr td .angular-editor .angular-editor-toolbar .angular-editor-toolbar-set:nth-child(2) .angular-editor-button,
+.dashboard-formatting tr td .angular-editor .angular-editor-toolbar .angular-editor-toolbar-set:last-child .angular-editor-button {
+    border: none;
+    font-size: 9px;
+    padding: 5px 6px;
+    min-width: auto;
+    margin: 0 5px 0 0;
+    font-weight: bold;
+}
+.angular-editor .angular-editor-wrapper .angular-editor-textarea>pre>code{
+    background-color: white !important;
+}
+.dashboard-formatting tr td .angular-editor-textarea {
+    background-color: #ffffff !important;
+    height: 90px !important;
+}
+.icon-button {
+    border: none; /* Remove the button's border */
+    background-color: transparent; /* Optional: set the background color to transparent */
+}
+.icon-button:focus {
+    outline: none; /* Optional: remove the focus outline when the button is clicked */
+}
+
+
+
+
+
+
+
+
+.code{
+    width: 136px;
+    height: 14px;
+    float: left;
+    border-color: rgb(218,218,218);
+}
+.myform {
+    margin-top: 20px;
+}
+.rowContainer{
+    width: 96%;
+    height: min-content;
+    margin:2px; 
+    font-size: 12px;
+    float: left;
+}
+.rowContainer input {
+    border: 1px solid #c5c5c5;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #121212;
+    text-decoration: none solid rgb(18, 18, 18);
+    height: 18px;
+    padding: 4px;
+    background-size: cover;
+}
+.rowContainer .codeInput {
+    width: 105px !important;
+}
+.rowContainer .titleInput {
+    width: 400px !important;
+}
+.rowContainer .editor {
+    position: relative;
+    display: inline-block;
+}
+.rowContainer .relatedInput {
+    width: 400px !important;
+    border: 1px solid #c5c5c5;
+    border-radius: 2px;
+    font-size: 12px;
+    height: 36px !important;
+    padding: 4px;
+}
+.rowContainer .keyInput{
+    background-color: #DADADA;
+    max-width: fit-content;
+    margin: 11px 0px 8px 0px;
+    border: 0px solid  #8c8c8c !important;
+    float: left;
+    height: 33px;
+ }
+ .rowContainer .keyInput input{
+    width: 250px;
+    background-color: transparent;
+    border: 0px solid;
+    color: black;
+    margin: 5px;
+    text-align: center;
+}
+.rowContainer .btnGenkey{
+    color: white;
+    background-color: #8E3B63;
+    width: 127px;
+    border: 0px;
+    text-align: center;
+    padding: 6px;
+    height: 33px;
+    cursor: pointer;
+}
+.separator {
+    border-top: 1px solid #DADADA; height: 10px;margin-top: 10px;
+}
+angular-editor-toolbar-set{
+    padding-left: 65%;
+}
+div.angular-editor{
+    width: 650px !important;
+    height: 121px !important;
+}
+
+
+
+.angular-editor-toolbar{
+    display: flex;
+}
+.angular-editor-toolbar .angular-editor-toolbar-set:nth-child(11)
+{
+order: 1;
+position: relative;
+left: 25px;
+}
+.angular-editor-toolbar .angular-editor-toolbar-set:nth-child(2){
+position: relative;
+left: 63px;
+}  
+.angular-editor-toolbar .angular-editor-toolbar-set:nth-child(5)
+{
+    position: relative;
+    left: 25px;
+    order: 2;
+    width: 33px;
+}
+.angular-editor-toolbar .angular-editor-toolbar-set:nth-child(13){
+    position: relative;
+    left: 26px;
+}
+.angular-editor-toolbar .angular-editor-toolbar-set:nth-child(10){
+order: -1;
+width: 20px;
+}  
+.TitleOFEditor{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+    color: #510c0c;
+    font-weight: 500;
+} 
+.dfaHelpTitleOFEditor{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+    color: #510c0c;
+    font-weight: 500;
+} 
+.dfaHelpSidebar ol, ul{
+    list-style: unset !important;
+    padding: revert;
+}
+.dfaHelpSidebar ol, ul > li{
+    margin-bottom: 5px;
+}
+.dfaHelpSidebar hr{
+    border-color: #ececec;
+    border-width: 2px;
+}

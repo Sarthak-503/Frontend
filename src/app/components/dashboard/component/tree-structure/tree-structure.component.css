@@ -1,0 +1,239 @@
+.tree-structure{
+  background-color:#dadada !important ;
+}
+
+.example-tree-invisible {
+    display: none;
+  }
+  
+  /* .example-tree ul,
+  .example-tree li, 
+  .example-tree input{
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+  }  */
+  
+  .background {
+    background-color: #c9c9c9 !important;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  .mat_tree {
+    display: block;
+    overflow-y: auto;
+    padding: 5px 0 0 0;
+    box-sizing: border-box;
+    height: calc(100vh - 135px);
+    background: #dadada !important;
+  }
+  
+  .myfont {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    cursor: pointer;
+    color: #696969;
+    min-height: auto;
+    line-height: 21px;
+    text-transform: capitalize;
+  }
+  
+  .cdk-tree-node .myfont {
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .iconFont {
+    width: auto;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mat-nested-tree-node.cdk-nested-tree-node.cdk-tree-node .nested_node:nth-child(2){
+    padding: 0 0 0 20px;
+  }
+
+  /* .nested_node .mat-tree-node[aria-level*="3"] {
+    padding: 0 0 0 45px;
+  } */
+  
+  .mat-nested-tree-node.cdk-nested-tree-node .nested_node .myfont {
+    margin: 0;
+    flex: auto;
+    width: 100%;
+    color: #696969;
+    min-height: auto;
+    box-sizing: border-box;
+    padding: 0 0 0 5px;
+  }
+  
+  .mat-nested-tree-node.cdk-nested-tree-node .nested_node .myfont .myfont {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 5px;
+  }
+
+  .nodeTitle {width: calc(100% - 30px);}
+  .nodeTitle :hover{background-color: red;}
+  /*mat-nested-tree-node :hover{background-color: red;}*/
+  
+  .add_button {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    color: #696969;
+    margin: 0 3px 0 0;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: transparent;
+    font-family: "Arial-BoldMT", "Arial", "Arial", "font-L-fch6crbdd5p7j8hu490q4ub1dgh2r8kgdxtq8wv3e9mq0x2ec5ppa8hu490q4ub1dgpm4vvcch6n88hc49v62wk9c5q788hu4916yv3448p24xv5d5kpgx1278vk0c1c49mq8rbcd5hj4ek6c5p76tbx", Arial !important;
+  }
+   
+   
+   
+   
+  
+  .ab {
+    background-color: rgb(218, 218, 218);
+  }
+  
+  .collapse {
+    display: none;
+  }
+  
+  .input-box {
+    width: calc(100% - 60px);
+    display: block;
+    padding: 0 7px;
+    height: 18px;
+    line-height: 18px;
+    margin: 4px 0 6px 25px;
+    border-radius: 4px;
+    border: none;
+    font-size: 11px;
+  }
+  
+  .input-box:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .plus {
+    float: left;
+    padding-right: 30px;
+  }
+  
+  .panel-group {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  .left-part {
+    /* background-color: rgb(218,218,218); */
+    height: 100%;
+  }
+  
+  p {
+    width: 69.36px;
+    height: 13.75px;
+  }
+  
+  .headerandfooter>p {
+    width: 119.98px;
+  }
+  
+  .mediafiles>p {
+    width: 76.98px;
+  }
+  
+  .plus {
+    float: left;
+    padding-right: 30px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  li>a {
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+  }
+  
+  .items>li {
+    translate: -3px;
+  }
+
+  .bottom-input-container{
+    background-color: #dadada;
+    padding: 5px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    background-image: none;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 242px;
+    height: 42px;
+    pointer-events: all;
+  }
+  .bottom-input{
+    width: 228px;
+    padding: 3px;
+  }
+  .bottom-input-container span {
+    float: right;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .treeNodeLbl{
+    width: calc(100% - 27px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .removeicon{
+    padding: 0px 5px;
+    font-size: 14px;
+  }
+  .deleteKeyMsg{
+    font-size: 12px;
+    position: absolute;
+    bottom: 49px;
+    margin: 5px;
+    color: red;
+  }
+  
+  
+  
+  
+  
+  
+  /* ===================================== */
+  
+  

@@ -1,0 +1,77 @@
+<div class="cont">
+  <div class="content">    
+    <div style="height:33px; border-bottom: 1px solid #DADADA;">
+      <ul class="navigation-tab">
+        <li *ngFor="let option of Options;let index" [class.selected]="option === selectedOption" (click)="selectOption(option);updatevalue()" style="list-style: none;">{{option|titlecase}}</li>
+      </ul>
+    </div>
+
+    <div style="height: calc(100% - 84px); overflow: auto;">
+  
+    <form [formGroup]="updateform" (ngSubmit)="onSubmit()" class="myform">
+      
+      <!-- Code Section -->
+      <div class="rowContainer">
+        <div><p class="code">Code (10) *</p></div>
+        <div><input class="codeInput" type="text" formControlName="code"></div>
+      </div>
+
+      <!-- Title Section -->
+      <div class="rowContainer">
+        <div><p class="code">Title *</p></div>
+        <div><input class="titleInput" type="text" required formControlName="title"></div>
+      </div>
+
+      <!-- Description Section -->
+      <div class="rowContainer">
+        <div><p class="code">Description (HTML) *</p></div>
+        <div class="editor">
+          <angular-editor [config]="toolbarConfig" [(ngModel)]="descriptioncontent" formControlName="desc">{{descriptioncontent}}</angular-editor>
+        </div>
+      </div>
+
+      <!-- Pupose Section -->
+      <div class="rowContainer">
+        <div><p class="code">Purpose (HTML)</p></div>
+        <div class="editor">
+          <angular-editor  class="" [config]="toolbarConfig" [(ngModel)]="purposecontent"  formControlName="purpose">{{purposecontent}}</angular-editor>
+        </div>
+      </div>
+
+      <div class="rowContainer separator"></div>
+
+      <!-- Related keys Section -->
+      <div class="rowContainer">
+        <div><p class="code">Related Keys</p></div>
+        <div>
+          <textarea class="relatedInput" type="text" required formControlName="related_keys"></textarea>
+        </div>
+      </div>
+
+      <div class="rowContainer separator"></div>
+
+      <!-- Generate Key Section -->
+      <div class="rowContainer">
+        <div><p class="code"><button type="submit" class="btnGenkey">{{updateform.value.key ? 'Save Key' : "Generate Key"}}</button></p></div>
+        <div class="keyInput">
+          <input [readonly]="true" formControlName="key">
+        </div>
+        
+        <div class="messageClass" *ngIf="processMsg">
+          {{processMsg}}
+        </div>       
+
+      </div>
+
+      <div class="rowContainer" style="height: 50px;"></div>
+
+    </form>
+
+  </div>
+
+  </div>
+  </div>
+
+  <div class="loaderContainer" *ngIf="processing">
+    <div class="loader"></div>
+  </div>  

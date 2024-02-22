@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+/* *{
+     text-decoration: none;
+} */
+html, body { height: 100%; overflow: hidden;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.messageClass{
+     border-radius: 2px;
+     font-weight: 100;
+     /* width: 300px !important; */
+     border: 1px solid transparent;
+     padding: 5px !important;
+     font-size: 14px !important;
+     height: 19px !important;
+     text-align: center;
+     margin: 11px 10px 10px 10px;
+     background-color: green;
+     color: white;
+     float: left;
+ }
+ .errorClass{
+    background-color: red;
+}
+/* Loader  */
+.loaderContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #DADADA;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+.loader {
+     border: 6px solid #808080; /* Light grey */
+     border-top: 6px solid #3498db; /* Blue */
+     border-radius: 50%;
+     width: 20px;
+     height: 20px;
+     animation: spin 2s linear infinite;
+     margin-left: 5px;
+     margin-right: 5px;
+     position: absolute;
+     top: 50%;
+     left: 50%
+ }
+   
+ @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+ }
+
+ @import '../src/app/components/dashboard/component/content/content.component.css';
+  @import '../node_modules/font-awesome/css/font-awesome.css'
+   
